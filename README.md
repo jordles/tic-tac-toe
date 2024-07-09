@@ -20,7 +20,9 @@ OOP Pillars (EAIP or PAIN) Checklist:
 ---
 
 Possible Features to Implement:  
-A line across the 3 tile pieces to indicate the match and end of the game. 
+*  A line across the 3 tile pieces to indicate the match and end of the game.   
+* Greyed out player buttons to indicate they cannot be changed until the game ends.  
+* Adding an AI options to play against a bot instead.  
 
 Known issues: 
 emojis/symbols can go past the 1 character limit for tilePieces. I have tried to use an input event listener instead but that doesn't work, including cases with copy and paste.  
