@@ -22,6 +22,3 @@ A line across the 3 tile pieces to indicate the match and end of the game.
 
 Known issues: 
 emojis/symbols can go past the 1 character limit for tilePieces. I have tried to use an input event listener instead but that doesn't work, including cases with copy and paste.  
-
-## Attribution
-*[limit character count](https://stackoverflow.com/questions/73730265/how-to-limit-character-count-on-contenteditible-div-in-vanilla-javascript)
