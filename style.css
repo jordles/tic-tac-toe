@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+  font-family: "Atma", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+:root{
+  --hover-content: ;
+  --hover-shadow: ;
+  --hover-color: transparent;
+}
+
+html, body{
+  height: 100vh;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#title{
+  font-size: 4rem;
+  line-height: 1;
+
+}
+#board{
+  background: black;
+  /* height: 400px;
+  width: 400px; */
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+  /* overflow: hidden; */
+}
+
+.tile{
+  height: 100px;
+  width: 100px;
+  background: white;
+  /* border: inherit; */
+  border-radius: 0.2rem;
+  font-family: "Finger Paint", system-ui;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  overflow: hidden;
+}
+
+.tile:empty:hover::after{
+  content: var(--hover-content);
+  color: var(--hover-color);
+  text-shadow: 0 0 0 var(--hover-shadow);
+  opacity: 0.7;
+}
+button{
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  min-width: 141px;
+  
+}
+
+.instructions{
+  color: rgb(218, 85, 70);
+}
+
+div{
+  display: flex;
+  gap: 5px;
+}
+
+.player{
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.player.one{
+  background-color: #d84c4c;
+}
+.player.two{
+  background-color: #3784d7;
+}
+
+.player .tilePiece{
+  min-width: 20px;
+}
+.player label{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: solid white;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.player input[type="color"]{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+#message{
+  min-height: 38px;
+}
+.disabled{
+  cursor:not-allowed;
+  background: gray;
+}
+.flip{
+  transform: scale(-1,1);
+  display: inline-block;
+}
+
+
+img{
+  padding: 5px;
+  height: 100px;
+}
+
+a{
+  color: black;
+}
