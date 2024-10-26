@@ -4,6 +4,7 @@ This is a project assignment from 100Devs focusing on utilizing OOP practices.
 
 You can customize your name, tile piece, and color to your liking. It accepts cases where you can put the same tilePiece, assuming each player uses a different color. 
 
+![](https://github.com/jordles/tic-tac-toe/blob/main/tic_tac_toe.gif)  
 [Demo ❌⭕](https://jordles.github.io/tic-tac-toe/)
 
 ## Key Topics
