@@ -1,4 +1,4 @@
-## Tic Tac Toe - OOP (100Devs Project Class 30 - 32)
+## Tic Tac Toe - OOP (100Devs Project C 30 - 32)
 
 This is a project assignment from 100Devs focusing on utilizing OOP practices.  
 
